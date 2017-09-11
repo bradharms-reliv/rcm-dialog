@@ -734,7 +734,7 @@ angular.module(
                         jQuery.post(actionUrl, form.serialize())
                             .done(
                             function (data) {
-                                formAction.type = 'hide';
+                                //formAction.type = 'hide';
                                 scope.dialog.loading = false;
                                 scope.$apply();
                             }
@@ -747,7 +747,6 @@ angular.module(
                         )
                             .always(
                             function (data) {
-
                                 content.html(data);
                                 scope.dialog.loading = false;
                                 $compile(content)(scope);
@@ -815,6 +814,7 @@ angular.module(
         }
     ]
 );
+
 /**
  * Get Module
  */
