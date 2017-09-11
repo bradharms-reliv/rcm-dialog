@@ -734,7 +734,6 @@ angular.module(
                         jQuery.post(actionUrl, form.serialize())
                             .done(
                             function (data) {
-                                //formAction.type = 'hide';
                                 scope.dialog.loading = false;
                                 scope.$apply();
                             }
